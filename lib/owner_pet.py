@@ -21,7 +21,7 @@ class Pet:
         
     @owner.setter
     def owner(self, owner):
-        if owner is None or isinstance(owner, Owner):  # Allow None as a valid value
+        if owner is None or isinstance(owner, Owner):
             self._owner = owner
         else:
             raise TypeError("Object is not of type Owner")  
